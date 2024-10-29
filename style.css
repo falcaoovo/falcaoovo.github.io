@@ -1,0 +1,471 @@
+/* Reset e estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #00ff00;
+    background-color: #000;
+}
+
+/* Cabeçalho simplificado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+header .cta {
+    padding: 0.5rem 1rem;
+    background-color: #00ff00;
+    border: none;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Seção de VSL */
+#vsl {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    z-index: 1; /* Garante que o conteúdo fica sobre o fundo */
+}
+
+#vsl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./imgs/Sports-PNG-Photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1; /* Controla a opacidade do background */
+    z-index: -1; /* Coloca o background atrás do conteúdo */
+}
+  
+
+
+#vsl h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    
+    color: #00ff00;
+}
+
+#vsl p {
+    font-size: 1.2rem;
+    color: #bdffb0;
+    margin-bottom: 2rem;
+}
+
+.vsl-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.vsl-content video {
+    width: 100%;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.vsl-content .cta {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+.features-container {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 1;
+    background-image: url('./imgs/Ufc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+}
+
+.features-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+#features h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    
+    font-size: 2.5rem; /* Tamanho da fonte maior */
+    color: #0be70b; /* Cor do título */
+}
+
+#features p{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.feature {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(25, 25, 25, 0.9); /* Fundo mais claro */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3); /* Sombra mais suave */
+    
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+}
+
+@media (min-width: 768px) {
+    .feature:nth-child(odd) {
+        align-self: flex-start;
+        margin-left: 20%; /* Margem reduzida para um layout mais equilibrado */
+    }
+
+    .feature:nth-child(even) {
+        align-self: flex-end;
+        margin-right: 20%; /* Margem reduzida para um layout mais equilibrado */
+    }
+}
+
+.feature img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.feature img:hover {
+    transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+.feature-text {
+    max-width: 400px;
+}
+
+
+
+
+
+
+/* Depoimentos */
+#testimonials {
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens passem para a linha de baixo se o espaço for limitado */
+    justify-content: center; /* Centraliza os depoimentos horizontalmente */
+    gap: 2rem; /* Espaçamento entre os depoimentos */
+}
+
+#testimonials img {
+    width: auto;
+    height: 600px;
+}
+
+ h2 {
+    margin-top:8rem ;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00ff00;
+}
+
+.testimonial {
+    max-width: 300px;
+    padding: 1rem;
+    background-color: #1111113d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+    font-style: italic;
+    color: #b0ffb0;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+/* Seção Planos */
+
+/* Seção Planos */
+#plans {
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    padding: 3rem 2rem;
+    text-align: center;
+    background-image: url('./imgs/ronaldo.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+}
+
+/* Gradiente na seção Planos */
+#plans::before,
+#plans::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20%; /* Cada gradiente cobre metade da seção */
+    z-index: 0; /* Coloca o gradiente atrás do conteúdo */
+}
+
+/* Gradiente superior */
+#plans::before {
+    top: 0; /* Alinha ao topo do contêiner */
+    background-image: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.719), 
+        rgba(0, 0, 0, 0.363), 
+        rgba(0, 0, 0, 0.171), 
+        rgba(0, 0, 0, 0) /* Transparente */
+    );
+}
+
+/* Gradiente inferior */
+#plans::after {
+    bottom: 0; /* Alinha ao fundo do contêiner */
+    background-image: linear-gradient(to top, 
+    rgba(0, 0, 0, 0.966), 
+    rgba(0, 0, 0, 0.877), 
+    rgba(0, 0, 0, 0.788), 
+    rgba(0, 0, 0, 0.349), 
+    rgba(0, 0, 0, 0) /* Transparente */
+    );
+}
+
+
+
+
+#plans h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.plan-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.plan-container img {
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.plan {
+    background-color: #11111100;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    max-width: 600px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #00ff00;
+    text-align: center; 
+}
+
+
+
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.benefits li {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #b0ffb0;
+}
+
+.benefits li::before {
+    content: "✔";
+    color: #00ff00;
+    position: absolute;
+    left: 0;
+    font-size: 1.8rem;
+}
+
+
+.original-price {
+    font-size: 2rem;
+    color: #ff5a5a;
+    text-decoration: line-through;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Centraliza o preço original */
+}
+
+.discounted-price {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centraliza o preço com desconto */
+}
+
+.cta {
+    z-index: 2;
+    background-color: #00ff00;
+    color: #111;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    animation: pulse 1.5s infinite; /* Animação de pulsação */
+}
+
+.cta:hover {
+    background-color: #00cc00;
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+}
+
+
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .plan-container {
+        flex-direction: column; /* Alinha os planos verticalmente em telas menores */
+    }
+
+    .plan {
+        max-width: 90%; /* Aumenta a largura máxima em dispositivos móveis */
+    }
+
+    #plans h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
+    }
+}
+
+
+
+/* Perguntas Frequentes */
+#faq {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#faq h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00ff00;
+}
+
+#faq details {
+    margin: 1rem auto;
+    max-width: 900px;
+    background: #11111100;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+    color: #b0ffb0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#faq details:hover {
+    transform: translateY(-5px);
+}
+
+#faq summary {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+#faq p {
+    margin-top: 0.5rem;
+    color: #b0ffb0;
+}
+
+/* Rodapé */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: #b0ffb0;
+    background: #111;
+    font-size: 0.9rem;
+}
