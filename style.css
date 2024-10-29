@@ -54,7 +54,7 @@ header .cta {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(./imgs/Sports-PNG-Photo.png);
+    background-image: url(Sports-PNG-Photo.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1; /* Controla a opacidade do background */
@@ -121,7 +121,7 @@ header .cta {
     justify-content: center;
     padding: 2rem;
     z-index: 1;
-    background-image: url('./imgs/Ufc.jpg');
+    background-image: url('Ufc.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px; /* Bordas arredondadas */
@@ -247,7 +247,7 @@ header .cta {
     position: relative; /* Necessário para o posicionamento do pseudo-elemento */
     padding: 3rem 2rem;
     text-align: center;
-    background-image: url('./imgs/ronaldo.jpg'); /* Imagem de fundo */
+    background-image: url('ronaldo.jpg'); /* Imagem de fundo */
     background-repeat: no-repeat;
     background-size: cover; /* Ajusta o tamanho da imagem de fundo */
 }
