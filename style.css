@@ -297,116 +297,6 @@ header .cta {
     color: #333;
 }
 
-.plan-container {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.plan-container img {
-    width: 600px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.plan {
-    background-color: #11111100;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    max-width: 600px;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.plan h3 {
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-    color: #00ff00;
-    text-align: center; 
-}
-
-
-
-
-.benefits {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
-}
-
-.benefits li {
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    padding-left: 1.5rem;
-    position: relative;
-    color: #b0ffb0;
-}
-
-.benefits li::before {
-    content: "✔";
-    color: #00ff00;
-    position: absolute;
-    left: 0;
-    font-size: 1.8rem;
-}
-
-
-.original-price {
-    font-size: 2rem;
-    color: #ff5a5a;
-    text-decoration: line-through;
-    margin-bottom: 0.5rem;
-    text-align: center; /* Centraliza o preço original */
-}
-
-.discounted-price {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #00ff00;
-    margin-bottom: 1.5rem;
-    text-align: center; /* Centraliza o preço com desconto */
-}
-
-.cta {
-    z-index: 2;
-    background-color: #00ff00;
-    color: #111;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 2rem;
-    transition: background-color 0.3s ease;
-    align-self: center;
-    animation: pulse 1.5s infinite; /* Animação de pulsação */
-}
-
-.cta:hover {
-    background-color: #00cc00;
-}
-
-/* Animação de pulsação */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
-    }
-}
-
-
-
-/* Estilo Responsivo */
 @media (max-width: 768px) {
     .plan-container {
         flex-direction: column; /* Alinha os planos verticalmente em telas menores */
@@ -420,10 +310,11 @@ header .cta {
         font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
     }
 
-   .plan-container img {
-       width:300px; /* Reduz o tamanho do título em telas menores */
+    .plan-container img {
+        width: 300px; /* Reduz o tamanho da imagem em telas menores */
     }
 }
+
 
 
 
