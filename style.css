@@ -71,7 +71,7 @@ header .cta {
 }
 
 @media (min-width: 768px) {
-   #vsl-content h1{
+   .vsl-content h1{
     font-size: 1.2rem;
    }
 
