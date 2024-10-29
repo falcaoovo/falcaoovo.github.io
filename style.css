@@ -421,7 +421,7 @@ header .cta {
     }
 
    .plan-container img {
-       whidth:300px; /* Reduz o tamanho do título em telas menores */
+       width:300px; /* Reduz o tamanho do título em telas menores */
     }
 }
 
