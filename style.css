@@ -419,6 +419,10 @@ header .cta {
     #plans h2 {
         font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
     }
+
+   .plan-container img {
+       whidth:300px; /* Reduz o tamanho do título em telas menores */
+    }
 }
 
 
